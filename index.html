@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <title>Приглашение</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;1,300;1,400&family=Raleway:wght@300;400&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Raleway', sans-serif;
+            background: #f8f5f1;
+            color: #3a3a3a;
+            min-height: 100dvh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 24px;
+            overflow-x: hidden;
+        }
+
+        .card {
+            max-width: 400px;
+            width: 100%;
+            text-align: center;
+            padding: 48px 32px;
+            animation: fadeUp 1.2s ease both;
+        }
+
+        @keyframes fadeUp {
+            from { opacity: 0; transform: translateY(30px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        .line {
+            width: 40px;
+            height: 1px;
+            background: #c4a882;
+            margin: 0 auto 32px;
+            animation: expandLine 1.4s ease 0.4s both;
+        }
+
+        @keyframes expandLine {
+            from { width: 0; opacity: 0; }
+            to { width: 40px; opacity: 1; }
+        }
+
+        .greeting {
+            font-family: 'Cormorant Garamond', serif;
+            font-weight: 300;
+            font-style: italic;
+            font-size: 18px;
+            color: #9a8a78;
+            letter-spacing: 1px;
+            margin-bottom: 28px;
+            animation: fadeUp 1s ease 0.3s both;
+        }
+
+        .cafe-name {
+            font-family: 'Cormorant Garamond', serif;
+            font-size: 36px;
+            font-weight: 400;
+            color: #2c2c2c;
+            letter-spacing: 2px;
+            line-height: 1.2;
+            margin-bottom: 8px;
+            animation: fadeUp 1s ease 0.5s both;
+        }
+
+        .cafe-label {
+            font-size: 11px;
+            letter-spacing: 4px;
+            text-transform: uppercase;
+            color: #b8a693;
+            font-weight: 300;
+            margin-bottom: 40px;
+            animation: fadeUp 1s ease 0.6s both;
+        }
+
+        .details {
+            animation: fadeUp 1s ease 0.8s both;
+            margin-bottom: 40px;
+        }
+
+        .time {
+            font-family: 'Cormorant Garamond', serif;
+            font-size: 48px;
+            font-weight: 300;
+            color: #2c2c2c;
+            letter-spacing: 3px;
+            margin-bottom: 16px;
+        }
+
+        .address {
+            font-size: 13px;
+            font-weight: 300;
+            color: #8a8a8a;
+            line-height: 1.8;
+            letter-spacing: 0.5px;
+        }
+
+        .line-bottom {
+            width: 40px;
+            height: 1px;
+            background: #c4a882;
+            margin: 0 auto 36px;
+            animation: expandLine 1.4s ease 1s both;
+        }
+
+        .message {
+            font-family: 'Cormorant Garamond', serif;
+            font-size: 20px;
+            font-weight: 300;
+            font-style: italic;
+            color: #6b6b6b;
+            line-height: 1.6;
+            animation: fadeUp 1s ease 1.1s both;
+            margin-bottom: 40px;
+        }
+
+        .map-link {
+            display: inline-block;
+            font-size: 11px;
+            letter-spacing: 3px;
+            text-transform: uppercase;
+            color: #3a3a3a;
+            text-decoration: none;
+            border: 1px solid #d4c5b5;
+            padding: 14px 32px;
+            transition: all 0.3s ease;
+            font-weight: 400;
+            animation: fadeUp 1s ease 1.3s both;
+        }
+
+        .map-link:hover,
+        .map-link:active {
+            background: #3a3a3a;
+            color: #f8f5f1;
+            border-color: #3a3a3a;
+        }
+    </style>
+</head>
+<body>
+    <div class="card">
+        <div class="line"></div>
+
+        <h1 class="cafe-name">Le Frenchie</h1>
+        <p class="cafe-label">café</p>
+
+        <div class="details">
+            <p class="time">15:43</p>
+            <p class="address">
+                Smetanovy sady 332/6<br>
+                301 00 Plzeň
+            </p>
+        </div>
+
+        <div class="line-bottom"></div>
+
+        <a class="map-link" href="https://maps.google.com/maps?q=Smetanovy+sady+332/6,+301+00+Plzeň+3" target="_blank" rel="noopener">
+            Открыть карту
+        </a>
+    </div>
+</body>
+</html>
